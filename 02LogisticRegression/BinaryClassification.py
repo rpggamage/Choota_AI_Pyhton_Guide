@@ -4,8 +4,8 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.datasets import make_classification
 
 # Generate synthetic binary classification data (2 features)
-X, y = make_classification(n_samples=100, n_features=2,
-                           n_classes=2, random_state=42)
+X, y = make_classification(n_samples=100, n_features=2, n_classes=2,
+                           n_informative=2, n_redundant=0, n_repeated=0, random_state=42)
 
 # Create a logistic regression model
 model = LogisticRegression()
